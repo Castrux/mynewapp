@@ -1,0 +1,33 @@
+<p>
+  series works!
+</p>
+
+<table class="table">
+  <thead class="thead-light">
+      <tr>
+          <th>#</th>
+          <th>Name</th>
+          <th>Channel</th>
+          <th>Seasons</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let serie of Series">
+      <td>
+        <dd>{{serie.id}}</dd>
+      </td>
+      <td>
+        <dd>{{serie.name}}</dd>
+      </td>
+      <td>
+        <dd>{{serie.channel}}</dd>
+      </td>
+      <td>
+        <dd>{{serie.seasons}}</dd>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="4">Seasons average: {{promedioTemporadas}}</td>
+    </tr>
+  </tbody>
+</table>
